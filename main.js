@@ -4,6 +4,17 @@ onScroll()
 function onScroll() {
   showNavOnScroll()
   showBackToTopButtonOnScroll()
+
+  activateMenuAtCurrentSection()
+}
+
+function activateMenuAtCurrentSection (){
+  const targetLine = screenY + innerHeight/2
+
+  // verifica se a seção passou da linha
+  const sectionTop = home.offsetTop
+  const sectionHeight = home.offsetHeight
+  
 }
 
 function showNavOnScroll() {
