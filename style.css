@@ -6,7 +6,7 @@
 }
 
 :root {
-  --hue: 2;
+  --hue: 332;
   --primary-color: hsl(var(--hue), 100%, 26%);
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsla(210, 9%, 31%, 1);
@@ -366,7 +366,7 @@ nav .close-menu {
 }
 
 #home img {
-  width: 26.4rem;
+  width: 42rem;
   display: block;
   margin-inline: auto;
   object-position: 0 2rem;
