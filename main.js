@@ -38,19 +38,17 @@ function activateMenuAtCurrentSection(section) {
 }
 
 function showNavOnScroll() {
-  if (scrollY > 0) {
-    navigation.classList.add('scroll')
-  } else {
-    navigation.classList.remove('scroll')
-  }
+  const nav = document.getElementById('navigation')
+
+  scrollY > 0 
+  ? nav.classList.add('scroll') 
+  : nav.classList.remove('scroll')
 }
 
 function showBackToTopButtonOnScroll() {
-  if (scrollY > 1400) {
-    backToTopButton.classList.add('show')
-  } else {
-    backToTopButton.classList.remove('show')
-  }
+  scrollY > 0
+    ? backToTopButton.classList.add('show')
+    : backToTopButton.classList.remove('show')
 }
 
 function openMenu() {
